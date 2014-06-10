@@ -1,6 +1,6 @@
 # -*- coding: utf-8 flake8:noqa -*-
 from logfmt.parser import parse_line
-
+from logfmt.formatter import format_line
 
 def parse(stream):
     for line in stream:

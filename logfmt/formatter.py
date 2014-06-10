@@ -1,6 +1,6 @@
 def format_line(hash):
   outarr = []
-  for k,v in hash.iteritems():
+  for k,v in hash.items():
     if v is None:
       outarr.append("%s=" % k)
       continue

@@ -1,3 +1,5 @@
+import numbers
+
 def format_line(hash):
   outarr = []
   for k,v in hash.items():
@@ -8,7 +10,7 @@ def format_line(hash):
     if isinstance(v, bool):
         v = "true" if v else "false"
 
-    elif isinstance(v, (int, long, float) ):
+    elif isinstance(v, numbers.Number ):
         pass
 
     else:

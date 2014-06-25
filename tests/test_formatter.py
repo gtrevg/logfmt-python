@@ -26,10 +26,9 @@ class FormatterTestCase(TestCase):
     def test_float_value(self):
         data = format_line( OrderedDict([("key1", 342.23424), ("key2", -234234234.2342342)]) )
         
-	if sys.version_info < (3, 0):
+        if sys.version_info < (3, 0):
             self.assertEqual(data, "key1=342.23424 key2=-234234234.234")
         else:
-            234234234.2342342
             self.assertEqual(data, "key1=342.23424 key2=-234234234.2342342")
 
     # Essentially, pre format your floats to strings
